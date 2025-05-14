@@ -24,6 +24,7 @@ Full Image ➝ YOLO Car Detection ➝ Driver Side Crop ➝ YOLO Face/Person Dete
 Example image:
 
 ![Pipeline Output](https://github.com/jonibek95/driver-detection/assets/.../output.jpg)
+<img width="1162" alt="Image" src="https://github.com/user-attachments/assets/3da56f62-dcc2-4ab4-b280-d61d514071f4" />
 
 ---
 
