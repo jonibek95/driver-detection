@@ -8,7 +8,7 @@ This repository implements a **two-stage driver detection pipeline** using YOLOv
 
 This system performs:
 
-1. **Vehicle Detection** – Detects all cars in the frame using YOLOv5.
+1. **Vehicle Detection** – Detects car in the frame using YOLOv5.
 2. **Driver Side Cropping** – Automatically extracts only the driver's side from the detected car (e.g., 40% from the right side).
 3. **Driver Detection** – Applies another YOLOv5 model to detect the driver inside the cropped region.
 4. **Bounding Box Alignment** – Maps the detected driver back to the original image coordinates.
@@ -81,42 +81,3 @@ python demo.py --source path/to/image.jpg
 ```bash
 python demo.py --source path/to/video.mp4
 ```
-
-### Inside code (example):
-
-```python
-weights_path = 'yolov5x6.pt'
-image = 'car_person.jpg'
-detector = Detector(weights_path)
-detector.Prediction_1(image)
-detector.Prediction_2()
-```
-
----
-
-## 📌 Core Classes and Logic
-
-- `Prediction_1()`: Runs car detection and crops the driver side.
-- `Prediction_2()`: Runs person detection inside the crop and adjusts coordinates.
-- `mainA(video_path)`: Full pipeline for processing video.
-
----
-
-## 📦 Output
-
-- `crop.jpg`: Cropped driver region
-- `output.jpg`: Final detection with bounding box
-- `driver_video.avi`: Video with driver detections drawn
-
----
-
-## 📜 License
-
-MIT License
-
----
-
-## 👤 Author
-
-**Jonibek Raupov**  
-GitHub: [@jonibek95](https://github.com/jonibek95)
