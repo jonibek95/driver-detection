@@ -25,6 +25,10 @@ Example image:
 
 <img width="1162" alt="Image" src="https://github.com/user-attachments/assets/3da56f62-dcc2-4ab4-b280-d61d514071f4" />
 
+
+
+![Image](https://github.com/user-attachments/assets/c5535384-86f5-45a2-b5ab-4f0a97c65fcc)
+
 ---
 
 ## 💡 Key Features
